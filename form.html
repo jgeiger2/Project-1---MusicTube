@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | MusicTube</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html" target="_blank" rel="noopener noreferrer">Home</a> 
+        | 
+        <a href="../Collections/musicvideos.html">Music Videos</a> 
+        | 
+        <a href="../Collections/liveperformances.html">Live Performances</a> 
+        |
+        <a href="../Collections/topartists.html">Top Local Talent</a> 
+        | 
+        <a href="./form.html">Upload</a>
+    </nav>
+    <hr>
+    <h1>MusicTube | Upload</h1>
+    <h3>Tampa's best and brightest musicians!</h3>
+    <hr>
+    <h2>Upload a Video</h2>
+    <form action="submit" method="post">
+        <label for="title">Video Title:</label>
+        <input type="text" name="title" id="title"><br><br>
+        <label for="description">Video Description:</label><br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea><br><br>
+        <label for="file">Video:</label><br>
+        <input type="file" name="file" id="file"><br><br>
+        <label for="collection">Collection:</label>
+        <select name="collection" id="collection">
+            <option value="topartist">Top Artist</option>
+            <option value="liveperformance">Live Performance</option>
+            <option value="musicvideo">Music Video</option>
+        </select><br><br>
+        <input type="radio" name="privacy" id="public" value="public">
+        <label for="public">Public</label>
+        <input type="radio" name="privacy" id="private" value="private">
+        <label for="private">Private</label><br><br><br><br>
+        <button type="submit">Upload Video</button>
+    </form>
+
+
+    <footer>
+        <p><center>&copy; MusicTube 2087</center></p>
+    </footer>
+</body>
+</html>
